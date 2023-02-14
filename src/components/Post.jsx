@@ -22,22 +22,33 @@ export default function Post({ post, navigation }) {
 
 const styles = StyleSheet.create({
     post: {
-        margin: 10, 
-        padding: 10,
-        borderRadius: 10, 
-        backgroundColor: '#696C6A', 
+        margin: 20, 
+        padding: 15,
+        borderRadius: 10,
+        backgroundColor: '#77D6FF', 
         shadowColor: 'black', 
-        shadowOffset: { width: 1, height: 2}, 
+        shadowOffset: { width: 1, height: 2},
+        shadowOffset: {
+            width: "10",
+            height: "10",
+          },
+          shadowOpacity: "1",
+          shadowRadius: "10",
+          shadowColor: 'black'
     }, 
+
     image: {
         width: "100%", 
-        height: 300,
+        height: 295,
         marginBottom: 10,
         borderRadius: 10,
     },
+
     title: {
-        fontSize: 20,
-        color: '#f4f5f6',
+        fontSize: 16,
+        color: '#ffffff',
         fontWeight: 'bold',
+        textAlign: 'center',
+        margin: 4,
     },
 })
